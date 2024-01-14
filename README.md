@@ -17,8 +17,8 @@ Min.   :0.03065  Min.   :0.2415  Min.   :0.3167  Min.   :0.01153  Min.   :0.0894
 Median :0.58869  Median :0.9038  Median :0.8863  Median :0.63553  Median :0.8767   Median :0.8788
 Mean   :0.60502  Mean   :0.8872  Mean   :0.8746  Mean   :0.60706  Mean   :0.8493   Mean   :0.6208
 3rd Qu.:0.81663  3rd Qu.:0.9570  3rd Qu.:0.9677  3rd Qu.:0.76161  3rd Qu.:0.9415   3rd Qu.:0.8648
-Max.   :3.30986  Max.   :1.1720  Max.   :1.3944  Max.   :1.19977  Max.   :1.2605   Max.   :0.5904
-```
+Max.   :3.30986  Max.   :1.1720  Max.   :1.3944  Max.   :1.19977  Max.   :1.2605   Max.   :0.5904```
+
 
 The summary statistic table above shows a comprehensive overview of the proportional species richness for the BD5 group. The inclusion of Winsorized means enhances the robustness of the central tendency measures, providing a more reliable insight into the distribution of each variable. Here are the key take away from the table
 
@@ -35,8 +35,8 @@ Bees        1.0000000 0.3759451  0.41293480  0.25173839  0.4728640
 Bird        0.3759451 1.0000000  0.34225731  0.31091907  0.5941118
 Butterflies 0.4129348 0.3422573  1.00000000 -0.07224957  0.5608753
 Carabids    0.2517384 0.3109191 -0.07224957  1.00000000  0.1925311
-Macromoths  0.4728640 0.5941118  0.56087528  0.19253108  1.0000000
-```
+Macromoths  0.4728640 0.5941118  0.56087528  0.19253108  1.0000000```
+
 Here are the key take away from the correlation table:
 i). Bees and Birds: The correlation coefficient of 0.3759451 suggests a moderate positive correlation between Bees and Birds. This indicates that as the proportional species richness of Bees increases, there is a tendency for Birds to also increase.
 
@@ -53,7 +53,8 @@ mean proportional species richness for isopods
 ii). Test the independence between two categorical variables, the "dominantLandClass" and "ecologicalStatus"
 
 Test1:
-```Welch Two Sample t-test
+```
+Welch Two Sample t-test
 
 data:  butterflies and isopods
 t = 91.859, df = 9050.9, p-value < 2.2e-16
@@ -62,8 +63,8 @@ alternative hypothesis: true difference in means is not equal to 0
  0.3176938 0.3315483
 sample estimates:
 mean of x mean of y 
-0.8745706 0.5499496 ```
-
+0.8745706 0.5499496
+```
 The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2 \times 10^{-16}2.2×10 
 −16
  , indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
