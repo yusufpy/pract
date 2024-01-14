@@ -51,7 +51,7 @@ This correlation analysis provides insights into the relationships between diffe
 
 ![Boxplot for Bees](boxplot88.png)
 
-From the boxplot, we are able to visualize the proportional species richness of bees. The median proportional species richness is about 0.5. The 25th and 75th percentiles are about 0.25 and 0.75, respectively. There are few outliers in the data. It is possible that this data point is an outlier because it is from a different population than the rest of the data. For example, it could be from a different species of bee. It is also possible that the data point is an error. And aside from those few outliers the rest of the data is fairly normally distributed.
+From the boxplot, we are able to visualize the proportional species richness of bees. It can be see that there are few outliers in the data. It is possible that this data points are outliers because they are from a different population than the rest of the data or from a different species of bee. It is also possible that the data point is an error. Aside from those few outliers the rest of the data is fairly normally distributed.
 
 ### Hypothesis Test
 The following are the two hypothesis tests that we can perform with our data:
