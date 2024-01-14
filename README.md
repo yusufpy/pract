@@ -7,9 +7,9 @@ This report presents a comprehensive statistical analysis of the data related to
 The data consist of proportional species richness values for each taxonomic group. The analysis focuses on two subsets: BD5 (Bees, Birds, Butterflies, Carabids, Macromoths) and BD11 (a broader set of taxonomic groups).
 
 ### Univariate Analysis
-#### Summary Statistics
-Summary statistics for BD5, including minimum, 1st quartile, median, mean, 3rd quartile, and maximum values, are presented in the table below. Additionally, a Winsorized mean is calculated to mitigate the impact of outliers.
+We will begin with comprehensive analysis of proportional species richness for five taxonomic group in the BD5 group, namely Bees, Birds, Butterflies, Carabids, and Macromoths. The analysis includes `summary` statistics commonly obtained using the summary() command in R, as well as an additional statistic – the 20% Winsorized mean.
 
+### Summary Statistic
 ```
                 Bees           Bird       Butterflies      Carabids       Macromoths       Winsorized_Mean    
 Min.   :0.03065  Min.   :0.2415  Min.   :0.3167  Min.   :0.01153  Min.   :0.08947  Min.   :0.5904
@@ -20,11 +20,14 @@ Mean   :0.60502  Mean   :0.8872  Mean   :0.8746  Mean   :0.60706  Mean   :0.8493
 Max.   :3.30986  Max.   :1.1720  Max.   :1.3944  Max.   :1.19977  Max.   :1.2605   Max.   :0.5904
 ```
 
-#### Winsorized Mean
-The Winsorized mean values for each taxonomic group are calculated to provide a robust measure of central tendency. For example, the Winsorized mean for Macromoths is 0.5904.
+The summary statistic table above shows a comprehensive overview of the proportional species richness for the BD5 group. The inclusion of Winsorized means enhances the robustness of the central tendency measures, providing a more reliable insight into the distribution of each variable. Here are the key take away from the table
+
+i). Central Tendency: The mean values generally indicate the central tendency of each variable, with Birds having the highest mean (0.8872) and Bees the lowest (0.60502).
+ii).Variability: The range between the minimum and maximum values illustrates the variability in each variable, with Bees displaying the widest range (3.30986 - 0.03065).
+iii).Winsorized Mean: The Winsorized mean provides a robust alternative to the regular mean, less influenced by extreme values. In some cases, it differs noticeably from the regular mean, suggesting the presence of outliers.
 
 ### Correlation Analysis
-A correlation matrix is computed for BD5, revealing the pairwise correlations between Bees, Birds, Butterflies, Carabids, and Macromoths. The matrix shows moderate to strong positive correlations between the taxonomic groups.
+Correlation analysis presents the correlation analysis of proportional species richness for the BD5 group variables, namely Bees, Birds, Butterflies, Carabids, and Macromoths. The correlation matrix below illustrates the relationships between each pair of variables.
 
 ```
                  Bees      Bird   Butterflies   Carabids   Macromoths
@@ -34,9 +37,48 @@ Butterflies 0.4129348 0.3422573  1.00000000 -0.07224957  0.5608753
 Carabids    0.2517384 0.3109191 -0.07224957  1.00000000  0.1925311
 Macromoths  0.4728640 0.5941118  0.56087528  0.19253108  1.0000000
 ```
+Here are the key take away from the correlation table:
+i). Bees and Birds: The correlation coefficient of 0.3759451 suggests a moderate positive correlation between Bees and Birds. This indicates that as the proportional species richness of Bees increases, there is a tendency for Birds to also increase.
 
-### Contingency Table and Likelihood-Ratio Test
-A contingency table is constructed to compare the directional changes (increase or decrease) in BD11 and BD5. A likelihood-ratio test is performed, indicating a significant association between the changes in BD5 and BD11 (p-value < 0.05).
+ii). Birds and Macromoths: The correlation coefficient of 0.5941118 indicates a strong positive correlation between Birds and Macromoths. It suggests that as the proportional species richness of Birds increases, Macromoths also tend to increase.
+
+iii).Butterflies and Carabids: The correlation coefficient of -0.07224957 indicates a weak negative correlation between Butterflies and Carabids. This suggests that there is little to no linear relationship between the two variables.
+
+This correlation analysis provides insights into the relationships between different variables in the BD5 group. Understanding these correlations is crucial for identifying potential patterns in species richness and can aid in ecological interpretations.
+
+### Hypothesis Test
+Here are two hypothesis tests that we can perform with the give data:
+i). Test whether the mean proportional species richness for butterflies is significantly different from the
+mean proportional species richness for isopods
+ii). Test the independence between two categorical variables, the "dominantLandClass" and "ecologicalStatus"
+
+Test1:
+```Welch Two Sample t-test
+
+data:  butterflies and isopods
+t = 91.859, df = 9050.9, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.3176938 0.3315483
+sample estimates:
+mean of x mean of y 
+0.8745706 0.5499496 ```
+
+The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2 \times 10^{-16}2.2×10 
+−16
+ , indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
+
+Test2:
+```
+[1] 0.4738761
+[1] "There is not enough evidence to reject the null hypothesis of independence."
+```
+The p-value for the Chi-squared test is 0.4738761 which means there is not enough evidence to reject the null hypothesis of independence. This suggests that the variables being tested are not significantly associated based on the observed data.
+
+overall, these hypothesis tests provide insights into the relationships and differences between variables in the dataset
+
+### Contingency table/comparing categorical variables
+We constructed a contingency table to compare the directional changes (increase or decrease) in BD11 and BD5. A likelihood-ratio test is also performed, indicating a significant association between the changes in BD5 and BD11
 
 ```
 Contingency Table:
@@ -54,56 +96,18 @@ Likelihood-Ratio Test:
 	Pearson's Chi-squared test with Yates' continuity correction
 	data:  contingency_table
 	X-squared = 2849, df = 1, p-value < 2.2e-16
-
-Reject the null hypothesis: There is a significant association between BD5 and BD11 changes.
 ```
+The likelihood-ratio statistic is calculated using Pearson's Chi-squared test with Yates' continuity correction. The test results in a chi-squared value of 2849, with 1 degree of freedom and a p-value less than 2.2 \times 10^{-16}2.2×10 
+−16 which indicate a significant association between BD5 and BD11 changes hence we will reject the null hypothesis.
 
-### Odds Ratio, Sensitivity, Specificity, and Youden's Index
+### Odds Ratio, Sensitivity, Specificity, and Youden’s Index:
 Key metrics are calculated to assess the association between BD5 and BD11 changes:
 
-- Odds Ratio: 42.94
-- Sensitivity: 0.876
-- Specificity: 0.859
-- Youden's Index: 0.735
+- Odds Ratio: The calculated odds ratio is 42.93669, indicating a substantial association between BD5 and BD11 changes.
+- Sensitivity: The sensitivity is 0.8760574, representing the ability of the test to correctly identify increases in both BD5 and BD11.
+-Specificity: The specificity is 0.858649, indicating the ability to correctly identify decreases in both BD5 and BD11.
+-Youden’s Index: The calculated Youden's Index is 0.7347063, suggesting a strong overall performance of the test in distinguishing between BD5 and BD11 changes.
 
-These metrics provide insights into the predictive power and accuracy of the association between the two variables.
+With this comprehensive analysis, which include the likelihood-ratio test and various measures such as odds ratio and sensitivity, It can be concluded that changes in BD5 are not independent of changes in BD11. The results emphasize the interconnected nature of these biodiversity measures over the specified periods.
 
 ### Simple Linear Regression
-A simple linear regression model is fitted to predict the Isopods variable based on the proportional species richness of Bees, Birds, Butterflies, Carabids, and Macromoths (BD5). The coefficients and statistical significance of each predictor are reported.
-
-```
-Call:
-lm(formula = BD1$Isopods ~ BD5$Bees + BD5$Bird + BD5$Butterflies + 
-    BD5$Carabids + BD5$Macromoths, data = BD5)
-
-Coefficients:
-                 Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      0.278034   0.025820  10.768  < 2e-16 ***
-BD5$Bees        -0.050742   0.010322  -4.916 9.12e-07 ***
-BD5$Bird         0.018511   0.032436   0.571    0.568    
-BD5$Butterflies -0.001427   0.024573  -0.058    0.954    
-BD5$Carabids     0.440173   0.013799  31.899  < 2e-16 ***
-BD5$Macromoths   0.023820   0.027585   0.863    0.388    
-```
-
-### Model Selection via Stepwise Regression
-A stepwise regression is performed to select significant predictors for the Isopods variable. The process involves eliminating non-significant predictors to optimize the model. The final model includes Bees and Carabids as predictors.
-
-```
-Call:
-lm(formula = BD1$Isopods ~ Bees + Carabids, data = cbind(B
-
-D1, BD5))
-
-Coefficients:
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  0.307305   0.008718  35.250  < 2e-16 ***
-Bees        -0.044133   0.008904  -4.957  7.4e-07 ***
-Carabids     0.443689   0.012866  34.485  < 2e-16 ***
-```
-
-### Model Evaluation
-The selected model is evaluated on both the training and test sets using mean squared error (MSE). The MSE on the training set is 0.0262, while on the test set, it is 0.1045. This provides insights into the model's performance and generalizability.
-
-### Conclusion
-In conclusion, this statistical analysis has provided valuable insights into the relationships between taxonomic groups, directional changes, and their impact on the Isopods variable. The identified associations and predictive models contribute to a better understanding of ecological dynamics within the studied system.
