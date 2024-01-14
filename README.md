@@ -35,7 +35,8 @@ Bees        1.0000000 0.3759451  0.41293480  0.25173839  0.4728640
 Bird        0.3759451 1.0000000  0.34225731  0.31091907  0.5941118
 Butterflies 0.4129348 0.3422573  1.00000000 -0.07224957  0.5608753
 Carabids    0.2517384 0.3109191 -0.07224957  1.00000000  0.1925311
-Macromoths  0.4728640 0.5941118  0.56087528  0.19253108  1.0000000```
+Macromoths  0.4728640 0.5941118  0.56087528  0.19253108  1.0000000
+```
 
 Here are the key take away from the correlation table:
 i). Bees and Birds: The correlation coefficient of 0.3759451 suggests a moderate positive correlation between Bees and Birds. This indicates that as the proportional species richness of Bees increases, there is a tendency for Birds to also increase.
