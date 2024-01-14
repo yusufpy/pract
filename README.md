@@ -49,7 +49,7 @@ This correlation analysis provides insights into the relationships between diffe
 
 ### Boxplot
 
-![Boxplot for Bees](boxplot.png)
+![Boxplot for Bees](boxplot88.png)
 
 ### Hypothesis Test
 Here are two hypothesis tests that we can perform with the give data:
