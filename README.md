@@ -147,3 +147,80 @@ Let's determine the significancy of our model using the following metrics
 Our analysis reveals that changes in BD5 variables, specifically Bees and Carabids, are significantly associated with changes in BD1 (Isopods). The model provides insights into the direction and strength of these associations, aiding in the understanding of the ecological dynamics between these taxonomic groups.
 
 ### Multiple Linear Regression
+We perform a multiple linear regression (MLR) analysis on BD1 (chosen taxonomic group) against all five proportional species values in BD5. The goal is to establish a model with predictive capabilities and interpret the results. The analysis includes feature selection based on p-values and AIC (Akaike Information Criterion).
+
+Firstly, we estimated the initial AIC for the MLR model which is formulated as follow:
+```
+β₀ + β Bees × BD5 Bees + β Bird × BD5 Bird + β Butterflies × BD5 Butterflies + β Carabids × BD5 Carabids + β Macromoths × BD5 Macromoths + ε
+```
+The initial AIC for this model is -2299.821.
+
+### Feature Selection:
+Feature selection involves assessing p-values and AIC values to determine the significance of each predictor variable.
+The stepwise variable removal process yields the following results:
+- Step 1: Removing Butterflies (p-value > 0.05, AIC reduction).
+- Step 2: Removing Bird (p-value > 0.05, AIC reduction).
+- Step 3: Removing Macromoths (p-value > 0.05, AIC reduction).
+The final model, after feature selection, includes predictors Bees and Carabids.
+
+### Model with Interaction Term:
+An interaction term is introduced between any two predictor variables in the BD5 group. The AIC for this model is -2355.621. Although the AIC is lower, it is important to consider the interpretability and practical significance of the interaction term.
+
+### Dataset Split and Diagnostics:
+The dataset is divided into two subsets, Y00 and Y70, representing different time periods. Y70 is used as the training set, and Y00 as the test set. Diagnostics are performed on both sets, and the mean square error is computed.
+
+- Residuals: The residuals exhibit a mean close to zero, indicating a balanced model.
+- Multiple R-squared: 0.1858 suggests that 18.58% of the variability in BD1 Isopods is explained by the final model.
+- Adjusted R-squared: 0.1855 accounts for the number of predictors.
+- F-statistic: The overall model is statistically significant (p-value < 2.2 \times 10^{-16}2.2×10^−16).
+
+### Mean Squared Error on Training and Test Sets:
+- Training Set: The mean squared error on the training set is 0.02616332.
+- Test Set: The mean squared error on the test set is 0.1044568.
+
+From the output results it can be deduced that our model demonstrates significant associations between BD5 Bees, BD5 Carabids, and BD1 Isopods, providing valuable insights into the ecological relationships among these taxonomic groups.
+
+### Open Analysis
+We perform analysis to assess the dependence of BD5 (proportional species richness) on various variables, with a primary focus on changes observed between two periods, denoted as `Y70` and `Y00`. The selected variables include Bees, Birds, Butterflies, Carabids, Macromoths, and the period indicator (added to BD5 for analysis purpose).
+### Descriptive Statistics - First Period (`Y70`):
+```
+Bees              Bird         Butterflies        Carabids     
+ Min.   :0.03065   Min.   :0.2499   Min.   :0.3167   Min.   :0.1983  
+ 1st Qu.:0.28264   1st Qu.:0.8423   1st Qu.:0.7380   1st Qu.:0.5965  
+ Median :0.46577   Median :0.8928   Median :0.8412   Median :0.7101  
+ Mean   :0.50230   Mean   :0.8709   Mean   :0.8173   Mean   :0.7044  
+ 3rd Qu.:0.70841   3rd Qu.:0.9349   3rd Qu.:0.9178   3rd Qu.:0.8141  
+ Max.   :1.00000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+   Macromoths         period         
+ Min.   :0.08947   Length:2640       
+ 1st Qu.:0.73930   Class :character  
+ Median :0.82527   Mode  :character  
+ Mean   :0.80259                     
+ 3rd Qu.:0.89877                     
+ Max.   :1.00000
+```
+The statistics above provide an overview of the variability and central tendencies of BD5 variables during the first period.
+
+### Descriptive Statistics - Second Period ('Y00'):
+```
+Bees              Bird         Butterflies        Carabids     
+ Min.   :0.03065   Min.   :0.2499   Min.   :0.3167   Min.   :0.1983  
+ 1st Qu.:0.28264   1st Qu.:0.8423   1st Qu.:0.7380   1st Qu.:0.5965  
+ Median :0.46577   Median :0.8928   Median :0.8412   Median :0.7101  
+ Mean   :0.50230   Mean   :0.8709   Mean   :0.8173   Mean   :0.7044  
+ 3rd Qu.:0.70841   3rd Qu.:0.9349   3rd Qu.:0.9178   3rd Qu.:0.8141  
+ Max.   :1.00000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+   Macromoths         period         
+ Min.   :0.08947   Length:2640       
+ 1st Qu.:0.73930   Class :character  
+ Median :0.82527   Mode  :character  
+ Mean   :0.80259                     
+ 3rd Qu.:0.89877                     
+ Max.   :1.00000
+```
+Similar statistics are observed in the second period, suggesting stability or changes over time.
+
+This initial assessment provides a foundational understanding of the distribution of BD5 variables over the two periods with the statistics result showing that there is little changes in the distribution of BD5 over the two periods
+
+### Conclusion
+In summary, this statistical analysis contributes to a better understanding of the ecological dynamics within the studied taxonomic groups. The results underscore the interdependence of species richness measures, offering valuable insights for conservation and ecological management. Future research could explore more complex models and incorporate additional variables to enhance predictive capabilities.
