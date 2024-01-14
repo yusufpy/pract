@@ -51,7 +51,7 @@ This correlation analysis provides insights into the relationships between diffe
 
 ![Boxplot for Bees](boxplot88.png)
 
-From the boxplot, we are able to visualize the proportional species richness of bees. It can be see that there are few outliers in the data. It is possible that this data points are outliers because they are from a different population than the rest of the data or from a different species of bee. It is also possible that the data point is an error. Aside from those few outliers the rest of the data is fairly normally distributed.
+From the boxplot, we can see the proportional species richness of bees. It can be seen that there are few outliers in the data. It is possible that this data points are outliers because they are from a different population than the rest of the data or from a different species of bee. It is also possible that the data point is an error. Aside from those few outliers the rest of the data is fairly normally distributed.
 
 ### Hypothesis Test
 The following are the two hypothesis tests that we can perform with our data:
