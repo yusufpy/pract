@@ -76,7 +76,7 @@ sample estimates:
 mean of x mean of y 
 0.8745706 0.5499496
 ```
-The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2×e-6, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
+The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2 x 106, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
 
 Test2:
 ```
