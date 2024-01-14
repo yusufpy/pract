@@ -66,8 +66,7 @@ sample estimates:
 mean of x mean of y 
 0.8745706 0.5499496
 ```
-The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2 \times 10^{-16}2.2×10 
-−16, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
+The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2 \times 10^{-16}2.2×10^−16, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
 
 Test2:
 ```
@@ -75,7 +74,7 @@ Test2:
 [1] "There is not enough evidence to reject the null hypothesis of independence."
 ```
 
-The p-value for the Chi-squared test is 0.4738761 which means there is not enough evidence to reject the null hypothesis of independence. This suggests that the variables being tested are not significantly associated based on the observed data.
+The p-value for the Chi-squared test is 0.4738761 which means there is not enough evidence to reject the null hypothesis of independence. This suggests that the variables being tested are not significantly associated based on the  data.
 
 overall, these hypothesis tests provide insights into the relationships and differences between variables in the dataset
 
