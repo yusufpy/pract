@@ -53,6 +53,10 @@ This correlation analysis provides insights into the relationships between diffe
 
 From the boxplot, we can see the proportional species richness of bees. It can be seen that there are few outliers in the data. It is possible that this data points are outliers because they are from a different population than the rest of the data or from a different species of bee. It is also possible that the data point is an error. Aside from those few outliers the rest of the data is fairly normally distributed.
 
+### Conclusion from Boxplot and Table
+Conclusively, from the tables above the comprehensive analysis of proportional species richness for the BD5 group has yielded several key insights. Birds emerge as the taxonomic group with the highest mean proportional species richness, indicating a relatively higher average abundance. On the contrary, bees exhibit the lowest mean, suggesting lower abundance on average, and display the widest range, indicating higher variability. The Winsorized mean emphasizes the impact of extreme values, especially in bees, on the regular mean. Also,the boxplot for Bees reveals the presence of a few outliers, indicating potential differences in species richness. These outliers may represent a distinct population, a different species of bee, or could be errors in the data.
+
+
 ### Hypothesis Test
 The following are the two hypothesis tests that we can perform with our data:
 - Test whether the mean proportional species richness for butterflies is significantly different from the
