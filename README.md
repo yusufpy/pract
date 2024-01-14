@@ -158,9 +158,7 @@ Our analysis reveals that changes in BD5 variables, specifically Bees and Carabi
 We perform a multiple linear regression (MLR) analysis on BD1 (chosen taxonomic group) against all five proportional species values in BD5. The goal is to establish a model with predictive capabilities and interpret the results. The analysis includes feature selection based on p-values and AIC (Akaike Information Criterion).
 
 Firstly, we estimated the initial AIC for the MLR model which is formulated as follow:
-```
-β₀ + β Bees × BD5 Bees + β Bird × BD5 Bird + β Butterflies × BD5 Butterflies + β Carabids × BD5 Carabids + β Macromoths × BD5 Macromoths + ε
-```
+
 The initial AIC for this model is -2299.821.
 
 ### Feature Selection:
