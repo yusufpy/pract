@@ -11,7 +11,7 @@ We will begin with comprehensive analysis of proportional species richness for f
 
 ### Summary Statistic
 ```
-                Bees           Bird       Butterflies      Carabids       Macromoths       Winsorized_Mean    
+Bees           Bird       Butterflies      Carabids       Macromoths       Winsorized_Mean    
 Min.   :0.03065  Min.   :0.2415  Min.   :0.3167  Min.   :0.01153  Min.   :0.08947  Min.   :0.5904
 1st Qu.:0.35079  1st Qu.:0.8462  1st Qu.:0.7926  1st Qu.:0.47539  1st Qu.:0.7856   1st Qu.:0.9007
 Median :0.58869  Median :0.9038  Median :0.8863  Median :0.63553  Median :0.8767   Median :0.8788
