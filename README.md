@@ -22,9 +22,9 @@ Max.   :3.30986  Max.   :1.1720  Max.   :1.3944  Max.   :1.19977  Max.   :1.2605
 
 The summary statistic table above shows a comprehensive overview of the proportional species richness for the BD5 group. The inclusion of Winsorized means enhances the robustness of the central tendency measures, providing a more reliable insight into the distribution of each variable. Here are the key take away from the table
 
-i). Central Tendency: The mean values generally indicate the central tendency of each variable, with Birds having the highest mean (0.8872) and Bees the lowest (0.60502).
-ii).Variability: The range between the minimum and maximum values illustrates the variability in each variable, with Bees displaying the widest range (3.30986 - 0.03065).
-iii).Winsorized Mean: The Winsorized mean provides a robust alternative to the regular mean, less influenced by extreme values. In some cases, it differs noticeably from the regular mean, suggesting the presence of outliers.
+- Central Tendency: The mean values generally indicate the central tendency of each variable, with Birds having the highest mean (0.8872) and Bees the lowest (0.60502).
+- Variability: The range between the minimum and maximum values illustrates the variability in each variable, with Bees displaying the widest range (3.30986 - 0.03065).
+- Winsorized Mean: The Winsorized mean provides a robust alternative to the regular mean, less influenced by extreme values. In some cases, it differs noticeably from the regular mean, suggesting the presence of outliers.
 
 ### Correlation Analysis
 Correlation analysis presents the correlation analysis of proportional species richness for the BD5 group variables, namely Bees, Birds, Butterflies, Carabids, and Macromoths. The correlation matrix below illustrates the relationships between each pair of variables.
@@ -39,11 +39,11 @@ Macromoths  0.4728640 0.5941118  0.56087528  0.19253108  1.0000000
 ```
 
 Here are the key take away from the correlation table:
-i). Bees and Birds: The correlation coefficient of 0.3759451 suggests a moderate positive correlation between Bees and Birds. This indicates that as the proportional species richness of Bees increases, there is a tendency for Birds to also increase.
+- Bees and Birds: The correlation coefficient of 0.3759451 suggests a moderate positive correlation between Bees and Birds. This indicates that as the proportional species richness of Bees increases, there is a tendency for Birds to also increase.
 
-ii). Birds and Macromoths: The correlation coefficient of 0.5941118 indicates a strong positive correlation between Birds and Macromoths. It suggests that as the proportional species richness of Birds increases, Macromoths also tend to increase.
+- Birds and Macromoths: The correlation coefficient of 0.5941118 indicates a strong positive correlation between Birds and Macromoths. It suggests that as the proportional species richness of Birds increases, Macromoths also tend to increase.
 
-iii).Butterflies and Carabids: The correlation coefficient of -0.07224957 indicates a weak negative correlation between Butterflies and Carabids. This suggests that there is little to no linear relationship between the two variables.
+- Butterflies and Carabids: The correlation coefficient of -0.07224957 indicates a weak negative correlation between Butterflies and Carabids. This suggests that there is little to no linear relationship between the two variables.
 
 This correlation analysis provides insights into the relationships between different variables in the BD5 group. Understanding these correlations is crucial for identifying potential patterns in species richness and can aid in ecological interpretations.
 
