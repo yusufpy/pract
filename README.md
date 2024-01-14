@@ -10,15 +10,15 @@ The data consist of proportional species richness values for each taxonomic grou
 We will begin with comprehensive analysis of proportional species richness for five taxonomic group in the BD5 group, namely Bees, Birds, Butterflies, Carabids, and Macromoths. The analysis includes `summary` statistics commonly obtained using the summary() command in R, as well as an additional statistic – the 20% Winsorized mean.
 
 ### Summary Statistic
-```
-Bees             Bird            Butterflies     Carabids         Macromoths       Winsorized_Mean    
-Min.   :0.03065  Min.   :0.2415  Min.   :0.3167  Min.   :0.01153  Min.   :0.08947  Min.   :0.5904
-1st Qu.:0.35079  1st Qu.:0.8462  1st Qu.:0.7926  1st Qu.:0.47539  1st Qu.:0.7856   1st Qu.:0.9007
-Median :0.58869  Median :0.9038  Median :0.8863  Median :0.63553  Median :0.8767   Median :0.8788
-Mean   :0.60502  Mean   :0.8872  Mean   :0.8746  Mean   :0.60706  Mean   :0.8493   Mean   :0.6208
-3rd Qu.:0.81663  3rd Qu.:0.9570  3rd Qu.:0.9677  3rd Qu.:0.76161  3rd Qu.:0.9415   3rd Qu.:0.8648
-Max.   :3.30986  Max.   :1.1720  Max.   :1.3944  Max.   :1.19977  Max.   :1.2605   Max.   :0.5904
-```
+| Bees      | Bird      | Butterflies | Carabids  | Macromoths | Winsorized_Mean |
+|-----------|-----------|-------------|-----------|------------|-----------------|
+| 0.03065   | 0.2415    | 0.3167      | 0.01153   | 0.08947    | 0.5904          |
+| 0.35079   | 0.8462    | 0.7926      | 0.47539   | 0.7856     | 0.9007          |
+| 0.58869   | 0.9038    | 0.8863      | 0.63553   | 0.8767     | 0.8788          |
+| 0.60502   | 0.8872    | 0.8746      | 0.60706   | 0.8493     | 0.6208          |
+| 0.81663   | 0.9570    | 0.9677      | 0.76161   | 0.9415     | 0.8648          |
+| 3.30986   | 1.1720    | 1.3944      | 1.19977   | 1.2605     | 0.5904          |
+
 
 The summary statistic table above shows a comprehensive overview of the proportional species richness for the BD5 group. The inclusion of Winsorized means enhances the robustness of the central tendency measures, providing a more reliable insight into the distribution of each variable. Here are the key take away from the table
 
