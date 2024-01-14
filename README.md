@@ -108,8 +108,8 @@ Key metrics are calculated to assess the association between BD5 and BD11 change
 
 - Odds Ratio: The calculated odds ratio is 42.93669, indicating a substantial association between BD5 and BD11 changes. 
 - Sensitivity: The sensitivity is 0.8760574, representing the ability of the test to correctly identify increases in both BD5 and BD11. 
--Specificity: The specificity is 0.858649, indicating the ability to correctly identify decreases in both BD5 and BD11. 
--Youden’s Index: The calculated Youden's Index is 0.7347063, suggesting a strong overall performance of the test in distinguishing between BD5 and BD11 changes.
+- Specificity: The specificity is 0.858649, indicating the ability to correctly identify decreases in both BD5 and BD11. 
+- Youden’s Index: The calculated Youden's Index is 0.7347063, suggesting a strong overall performance of the test in distinguishing between BD5 and BD11 changes.
 
 With this comprehensive analysis, which include the likelihood-ratio test and various measures such as odds ratio and sensitivity, It can be concluded that changes in BD5 are not independent of changes in BD11. The results emphasize the interconnected nature of these biodiversity measures over the specified periods.
 
