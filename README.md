@@ -205,7 +205,7 @@ Bees              Bird         Butterflies        Carabids
 ```
 The statistics above provide an overview of the variability and central tendencies of BD5 variables during the first period.
 
-### Descriptive Statistics - Second Period ('Y00'):
+### Descriptive Statistics - Second Period (`Y00`):
 ```
 Bees              Bird         Butterflies        Carabids     
  Min.   :0.03065   Min.   :0.2499   Min.   :0.3167   Min.   :0.1983  
