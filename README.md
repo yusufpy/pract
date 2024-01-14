@@ -52,10 +52,10 @@ This correlation analysis provides insights into the relationships between diffe
 ![Boxplot for Bees](boxplot88.png)
 
 ### Hypothesis Test
-Here are two hypothesis tests that we can perform with the give data:
-i). Test whether the mean proportional species richness for butterflies is significantly different from the
+The following are the two hypothesis tests that we can perform with our data:
+- Test whether the mean proportional species richness for butterflies is significantly different from the
 mean proportional species richness for isopods
-ii). Test the independence between two categorical variables, the "dominantLandClass" and "ecologicalStatus"
+- Test the independence between two categorical variables, the "dominantLandClass" and "ecologicalStatus"
 
 Test1:
 ```
