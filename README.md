@@ -71,8 +71,8 @@ The p-value for the Welch Two Sample t-test comparing the means of butterflies a
 Test2:
 ```
 [1] 0.4738761
-[1] "There is not enough evidence to reject the null hypothesis of independence."
-```
+[1] "There is not enough evidence to reject the null hypothesis of independence." ```
+
 The p-value for the Chi-squared test is 0.4738761 which means there is not enough evidence to reject the null hypothesis of independence. This suggests that the variables being tested are not significantly associated based on the observed data.
 
 overall, these hypothesis tests provide insights into the relationships and differences between variables in the dataset
@@ -95,8 +95,7 @@ B 1305.944 1230.056
 Likelihood-Ratio Test:
 	Pearson's Chi-squared test with Yates' continuity correction
 	data:  contingency_table
-	X-squared = 2849, df = 1, p-value < 2.2e-16
-```
+	X-squared = 2849, df = 1, p-value < 2.2e-16```
 The likelihood-ratio statistic is calculated using Pearson's Chi-squared test with Yates' continuity correction. The test results in a chi-squared value of 2849, with 1 degree of freedom and a p-value less than 2.2 \times 10^{-16}2.2×10 
 −16 which indicate a significant association between BD5 and BD11 changes hence we will reject the null hypothesis.
 
