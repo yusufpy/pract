@@ -68,7 +68,7 @@ Test1:
 Welch Two Sample t-test
 
 data:  butterflies and isopods
-t = 91.859, df = 9050.9, p-value < 2.2e-16
+t = 91.859, df = 9050.9, p-value < 0.05
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
  0.3176938 0.3315483
@@ -150,7 +150,7 @@ Let's determine the significancy of our model using the following metrics
 - Residuals: The residuals have a mean close to zero, indicating that the model is balanced.
 - Multiple R-squared: 0.1861 suggests that 18.61% of the variability in BD1 Isopods is explained by the linear relationship with BD5.
 - Adjusted R-squared: 0.1854 adjusts for the number of predictors in the model.
-- F-statistic: With a value of 241.2 and a p-value less than 2.2xe-16, the overall model is statistically significant.
+- F-statistic: With a value of 241.2 and a p-value less than 0.05, the overall model is statistically significant.
 
 Our analysis reveals that changes in BD5 variables, specifically Bees and Carabids, are significantly associated with changes in BD1 (Isopods). The model provides insights into the direction and strength of these associations, aiding in the understanding of the ecological dynamics between these taxonomic groups.
 
@@ -178,7 +178,7 @@ The dataset is divided into two subsets, Y00 and Y70, representing different tim
 - Residuals: The residuals exhibit a mean close to zero, indicating a balanced model.
 - Multiple R-squared: 0.1858 suggests that 18.58% of the variability in BD1 Isopods is explained by the final model.
 - Adjusted R-squared: 0.1855 accounts for the number of predictors.
-- F-statistic: The overall model is statistically significant (p-value < 2.2 \times 10^{-16}2.2×10^−16).
+- F-statistic: The overall model is statistically significant (p-value < 0.05).
 
 ### Mean Squared Error on Training and Test Sets:
 - Training Set: The mean squared error on the training set is 0.02616332.
