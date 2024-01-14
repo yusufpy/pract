@@ -76,7 +76,7 @@ sample estimates:
 mean of x mean of y 
 0.8745706 0.5499496
 ```
-The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2×10^−16, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
+The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2×e-6, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
 
 Test2:
 ```
@@ -108,7 +108,7 @@ Likelihood-Ratio Test:
 	data:  contingency_table
 	X-squared = 2849, df = 1, p-value < 2.2e-16
 ```
-The likelihood-ratio statistic is calculated using Pearson's Chi-squared test with Yates' continuity correction. The test results in a chi-squared value of 2849, with 1 degree of freedom and a p-value less than 2.2×10^−16 which indicate a significant association between BD5 and BD11 changes hence we will reject the null hypothesis.
+The likelihood-ratio statistic is calculated using Pearson's Chi-squared test with Yates' continuity correction. The test results in a chi-squared value of 2849, with 1 degree of freedom and a p-value less than 2.2×e−16 which indicate a significant association between BD5 and BD11 changes hence we will reject the null hypothesis.
 
 ### Odds Ratio, Sensitivity, Specificity, and Youden’s Index:
 Key metrics are calculated to assess the association between BD5 and BD11 changes:
@@ -150,7 +150,7 @@ Let's determine the significancy of our model using the following metrics
 - Residuals: The residuals have a mean close to zero, indicating that the model is balanced.
 - Multiple R-squared: 0.1861 suggests that 18.61% of the variability in BD1 Isopods is explained by the linear relationship with BD5.
 - Adjusted R-squared: 0.1854 adjusts for the number of predictors in the model.
-- F-statistic: With a value of 241.2 and a p-value less than 2.2 \times 10^{-16}2.2×10 −16, the overall model is statistically significant.
+- F-statistic: With a value of 241.2 and a p-value less than 2.2xe-16, the overall model is statistically significant.
 
 Our analysis reveals that changes in BD5 variables, specifically Bees and Carabids, are significantly associated with changes in BD1 (Isopods). The model provides insights into the direction and strength of these associations, aiding in the understanding of the ecological dynamics between these taxonomic groups.
 
