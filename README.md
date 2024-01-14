@@ -67,8 +67,7 @@ mean of x mean of y
 0.8745706 0.5499496
 ```
 The p-value for the Welch Two Sample t-test comparing the means of butterflies and isopods is less than 2.2 \times 10^{-16}2.2×10 
-−16
- , indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
+−16, indicating strong evidence against the null hypothesis. The alternative hypothesis suggests that the true difference in means is not equal to 0. The 95% confidence interval for the difference in means is (0.3176938, 0.3315483). The sample estimates show that the mean of butterflies (0.8745706) is significantly higher than the mean of isopods (0.5499496).
 
 Test2:
 ```
@@ -114,3 +113,37 @@ Key metrics are calculated to assess the association between BD5 and BD11 change
 With this comprehensive analysis, which include the likelihood-ratio test and various measures such as odds ratio and sensitivity, It can be concluded that changes in BD5 are not independent of changes in BD11. The results emphasize the interconnected nature of these biodiversity measures over the specified periods.
 
 ### Simple Linear Regression
+A simple linear regression model is fitted to predict the Isopods (BD1) variable based on the proportional species richness of Bees, Birds, Butterflies, Carabids, and Macromoths (BD5). The coefficients and statistical significance of each predictor are reported.
+```
+Call:
+lm(formula = BD1$Isopods ~ BD5$Bees + BD5$Bird + BD5$Butterflies + 
+    BD5$Carabids + BD5$Macromoths, data = BD5)
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      0.278034   0.025820  10.768  < 2e-16 ***
+BD5$Bees        -0.050742   0.010322  -4.916 9.12e-07 ***
+BD5$Bird         0.018511   0.032436   0.571    0.568    
+BD5$Butterflies -0.001427   0.024573  -0.058    0.954    
+BD5$Carabids     0.440173   0.013799  31.899  < 2e-16 ***
+BD5$Macromoths   0.023820   0.027585   0.863    0.388    
+```
+Here's the interpretation of our report:
+- Intercept: The intercept (0.278034177) represents the estimated value of BD1 when all BD5 variables (Bees, Bird, Butterflies, Carabids, and Macromoths) are zero.
+
+Slope Coefficients (BD5):
+- BD5 Bees: A one-unit decrease in BD5 Bees is associated with a 0.050741648 increase in BD1 Isopods.
+- BD5 Bird: There is no significant association between BD5 Bird and BD1 Isopods, as indicated by the p-value (0.568).
+- BD5 Butterflies: There is no significant association between BD5 Butterflies and BD1 Isopods, as indicated by the p-value (0.954).
+- BD5 Carabids: A one-unit increase in BD5 Carabids is associated with a 0.440173380 increase in BD1 Isopods.
+- BD5 Macromoths: There is no significant association between BD5 Macromoths and BD1 Isopods, as indicated by the p-value (0.388).
+
+Let's determine the significancy of our model using the following metrics
+- Residuals: The residuals have a mean close to zero, indicating that the model is balanced.
+- Multiple R-squared: 0.1861 suggests that 18.61% of the variability in BD1 Isopods is explained by the linear relationship with BD5.
+- Adjusted R-squared: 0.1854 adjusts for the number of predictors in the model.
+- F-statistic: With a value of 241.2 and a p-value less than 2.2 \times 10^{-16}2.2×10 −16, the overall model is statistically significant.
+
+Our analysis reveals that changes in BD5 variables, specifically Bees and Carabids, are significantly associated with changes in BD1 (Isopods). The model provides insights into the direction and strength of these associations, aiding in the understanding of the ecological dynamics between these taxonomic groups.
+
+### Multiple Linear Regression
