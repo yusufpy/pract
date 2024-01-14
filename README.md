@@ -47,6 +47,10 @@ Here are the key take away from the correlation table:
 
 This correlation analysis provides insights into the relationships between different variables in the BD5 group. Understanding these correlations is crucial for identifying potential patterns in species richness and can aid in ecological interpretations.
 
+### Boxplot
+
+![Boxplot for Bees](boxplot.png)
+
 ### Hypothesis Test
 Here are two hypothesis tests that we can perform with the give data:
 i). Test whether the mean proportional species richness for butterflies is significantly different from the
